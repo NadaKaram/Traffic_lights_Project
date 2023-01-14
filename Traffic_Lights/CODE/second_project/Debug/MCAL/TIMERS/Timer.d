@@ -6,7 +6,9 @@ MCAL/TIMERS/Timer.o MCAL/TIMERS/Timer.o: ../MCAL/TIMERS/Timer.c \
   ../MCAL/TIMERS/../../ECUAL/BUTTON/../../MCAL/TIMERS/Timer.h \
   ../MCAL/TIMERS/../../ECUAL/BUTTON/../../MCAL/DIO/dio.h \
   ../MCAL/TIMERS/../../ECUAL/LED/LED.h \
-  ../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/Dio.h
+  ../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/Dio.h \
+  ../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/TIMERS/Timer.h \
+  ../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/dio.h
 
 ../MCAL/TIMERS/Timer.h:
 
@@ -25,3 +27,7 @@ MCAL/TIMERS/Timer.o MCAL/TIMERS/Timer.o: ../MCAL/TIMERS/Timer.c \
 ../MCAL/TIMERS/../../ECUAL/LED/LED.h:
 
 ../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/Dio.h:
+
+../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/TIMERS/Timer.h:
+
+../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/dio.h:
