@@ -9,9 +9,6 @@
 #define APPLICATION_APP_H_
 #include"../ECUAL/BUTTON/Button.h"
 #include"../ECUAL/LED/LED.h"
-#include"../MCAL/TIMERS/Timer.h"
-#include"../MCAL/DIO/dio.h"
-#include <util/delay.h>
 #define Pin_0 0
 #define Pin_1 1
 #define Pin_2 2
