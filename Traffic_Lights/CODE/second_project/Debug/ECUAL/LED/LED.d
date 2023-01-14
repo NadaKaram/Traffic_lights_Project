@@ -8,7 +8,7 @@ ECUAL/LED/LED.o ECUAL/LED/LED.o: ../ECUAL/LED/LED.c ../ECUAL/LED/LED.h \
   ../ECUAL/LED/../../MCAL/TIMERS/../../ECUAL/BUTTON/../../MCAL/TIMERS/Timer.h \
   ../ECUAL/LED/../../MCAL/TIMERS/../../ECUAL/BUTTON/../../MCAL/DIO/dio.h \
   ../ECUAL/LED/../../MCAL/TIMERS/../../ECUAL/LED/LED.h \
-  ../ECUAL/LED/../../MCAL/DIO/dio.h
+  ../ECUAL/LED/../../MCAL/DIO/dio.h ../ECUAL/LED/../BUTTON/Button.h
 
 ../ECUAL/LED/LED.h:
 
@@ -31,3 +31,5 @@ ECUAL/LED/LED.o ECUAL/LED/LED.o: ../ECUAL/LED/LED.c ../ECUAL/LED/LED.h \
 ../ECUAL/LED/../../MCAL/TIMERS/../../ECUAL/LED/LED.h:
 
 ../ECUAL/LED/../../MCAL/DIO/dio.h:
+
+../ECUAL/LED/../BUTTON/Button.h:

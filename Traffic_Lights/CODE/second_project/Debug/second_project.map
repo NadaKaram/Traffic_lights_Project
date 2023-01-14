@@ -7,17 +7,17 @@ c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
                               ./MCAL/TIMERS/Timer.o (__do_clear_bss)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
-                              ./MCAL/TIMERS/Timer.o (__fixunssfsi)
+                              ./ECUAL/LED/LED.o (__fixunssfsi)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__subsf3)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
-                              ./MCAL/TIMERS/Timer.o (__mulsf3)
+                              ./ECUAL/LED/LED.o (__mulsf3)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
-                              ./MCAL/TIMERS/Timer.o (__gtsf2)
+                              ./ECUAL/LED/LED.o (__gtsf2)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__gesf2)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
-                              ./MCAL/TIMERS/Timer.o (__ltsf2)
+                              ./ECUAL/LED/LED.o (__ltsf2)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
                               c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__fixsfsi)
 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
@@ -39,7 +39,7 @@ Common symbol       size              file
 Green_state         0x1               ./Application/App.o
 Red_state2          0x1               ./Application/App.o
 Green_state2        0x1               ./Application/App.o
-Yellow_state        0x1               ./MCAL/TIMERS/Timer.o
+Yellow_state        0x1               ./ECUAL/LED/LED.o
 Red_state           0x1               ./Application/App.o
 
 Memory Configuration
@@ -156,7 +156,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1a76
+.text           0x00000000     0x1a7a
  *(.vectors)
  .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
                 0x00000000                __vectors
@@ -306,75 +306,75 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00000cda                delay1
  .text.delay2   0x00000d0c       0x3c ./MCAL/TIMERS/Timer.o
                 0x00000d0c                delay2
- .text.yellow_led_pedestrians
-                0x00000d48      0x15c ./MCAL/TIMERS/Timer.o
-                0x00000d48                yellow_led_pedestrians
- .text.yellow_led_cars_toggle
-                0x00000ea4       0x68 ./MCAL/TIMERS/Timer.o
-                0x00000ea4                yellow_led_cars_toggle
  .text.__vector_11
-                0x00000f0c       0x40 ./MCAL/TIMERS/Timer.o
-                0x00000f0c                __vector_11
+                0x00000d48       0x40 ./MCAL/TIMERS/Timer.o
+                0x00000d48                __vector_11
  .text.Dio_init
-                0x00000f4c      0x204 ./MCAL/DIO/Dio.o
-                0x00000f4c                Dio_init
+                0x00000d88      0x204 ./MCAL/DIO/Dio.o
+                0x00000d88                Dio_init
  .text.Dio_read
-                0x00001150      0x16a ./MCAL/DIO/Dio.o
-                0x00001150                Dio_read
+                0x00000f8c      0x16a ./MCAL/DIO/Dio.o
+                0x00000f8c                Dio_read
  .text.Dio_write
-                0x000012ba      0x1e6 ./MCAL/DIO/Dio.o
-                0x000012ba                Dio_write
+                0x000010f6      0x1e6 ./MCAL/DIO/Dio.o
+                0x000010f6                Dio_write
  .text.Dio_toggle
-                0x000014a0       0xfc ./MCAL/DIO/Dio.o
-                0x000014a0                Dio_toggle
+                0x000012dc       0xfc ./MCAL/DIO/Dio.o
+                0x000012dc                Dio_toggle
  .text.LED_init
-                0x0000159c       0x22 ./ECUAL/LED/LED.o
-                0x0000159c                LED_init
- .text.LED_ON   0x000015be       0x22 ./ECUAL/LED/LED.o
-                0x000015be                LED_ON
- .text.LED_OFF  0x000015e0       0x22 ./ECUAL/LED/LED.o
-                0x000015e0                LED_OFF
+                0x000013d8       0x22 ./ECUAL/LED/LED.o
+                0x000013d8                LED_init
+ .text.LED_ON   0x000013fa       0x22 ./ECUAL/LED/LED.o
+                0x000013fa                LED_ON
+ .text.LED_OFF  0x0000141c       0x22 ./ECUAL/LED/LED.o
+                0x0000141c                LED_OFF
  .text.LED_toggle
-                0x00001602       0x20 ./ECUAL/LED/LED.o
-                0x00001602                LED_toggle
+                0x0000143e       0x20 ./ECUAL/LED/LED.o
+                0x0000143e                LED_toggle
+ .text.yellow_led_pedestrians
+                0x0000145e      0x160 ./ECUAL/LED/LED.o
+                0x0000145e                yellow_led_pedestrians
+ .text.yellow_led_cars_toggle
+                0x000015be       0x68 ./ECUAL/LED/LED.o
+                0x000015be                yellow_led_cars_toggle
  .text.Button_init
-                0x00001622       0x22 ./ECUAL/BUTTON/Button.o
-                0x00001622                Button_init
+                0x00001626       0x22 ./ECUAL/BUTTON/Button.o
+                0x00001626                Button_init
  .text.Button_read
-                0x00001644       0x30 ./ECUAL/BUTTON/Button.o
-                0x00001644                Button_read
+                0x00001648       0x30 ./ECUAL/BUTTON/Button.o
+                0x00001648                Button_read
  .text.Button_write
-                0x00001674       0x28 ./ECUAL/BUTTON/Button.o
-                0x00001674                Button_write
+                0x00001678       0x28 ./ECUAL/BUTTON/Button.o
+                0x00001678                Button_write
  .text.Button_toggle
-                0x0000169c       0x20 ./ECUAL/BUTTON/Button.o
-                0x0000169c                Button_toggle
+                0x000016a0       0x20 ./ECUAL/BUTTON/Button.o
+                0x000016a0                Button_toggle
  .text.switch_func
-                0x000016bc      0x1ae ./Application/App.o
-                0x000016bc                switch_func
+                0x000016c0      0x1ae ./Application/App.o
+                0x000016c0                switch_func
  .text.__vector_1
-                0x0000186a       0x54 ./Application/App.o
-                0x0000186a                __vector_1
+                0x0000186e       0x54 ./Application/App.o
+                0x0000186e                __vector_1
  .text.INT0_Init
-                0x000018be       0x62 ./Application/App.o
-                0x000018be                INT0_Init
+                0x000018c2       0x62 ./Application/App.o
+                0x000018c2                INT0_Init
  .text.App_start
-                0x00001920       0xce ./Application/App.o
-                0x00001920                App_start
- .text.main     0x000019ee       0x16 ./main.o
-                0x000019ee                main
- .text.libgcc   0x00001a04        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00001a04        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00001a04        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00001a04       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00001a04                __prologue_saves__
- .text.libgcc   0x00001a3c       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00001a3c                __epilogue_restores__
-                0x00001a72                . = ALIGN (0x2)
+                0x00001924       0xce ./Application/App.o
+                0x00001924                App_start
+ .text.main     0x000019f2       0x16 ./main.o
+                0x000019f2                main
+ .text.libgcc   0x00001a08        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001a08        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001a08        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001a08       0x38 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00001a08                __prologue_saves__
+ .text.libgcc   0x00001a40       0x36 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00001a40                __epilogue_restores__
+                0x00001a76                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001a72        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00001a72                exit
-                0x00001a72                _exit
+ .fini9         0x00001a76        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001a76                exit
+                0x00001a76                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -393,11 +393,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001a72        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001a76        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001a76                _etext = .
+                0x00001a7a                _etext = .
 
-.data           0x00800060        0xa load address 0x00001a76
+.data           0x00800060        0xa load address 0x00001a7a
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
@@ -470,7 +470,7 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
  .bss.gb_flag   0x0080006c        0x1 ./ECUAL/LED/LED.o
                 0x0080006c                gb_flag
  *(COMMON)
- COMMON         0x0080006d        0x1 ./MCAL/TIMERS/Timer.o
+ COMMON         0x0080006d        0x1 ./ECUAL/LED/LED.o
                 0x0080006d                Yellow_state
  COMMON         0x0080006e        0x4 ./Application/App.o
                 0x0080006e                Green_state
@@ -478,8 +478,8 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
                 0x00800070                Green_state2
                 0x00800071                Red_state
                 0x00800072                PROVIDE (__bss_end, .)
-                0x00001a76                __data_load_start = LOADADDR (.data)
-                0x00001a80                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001a7a                __data_load_start = LOADADDR (.data)
+                0x00001a84                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800072        0x0
                 0x00800072                PROVIDE (__noinit_start, .)
@@ -506,11 +506,11 @@ LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
 
 .stab           0x00000000     0x1d1c
  *(.stab)
- .stab          0x00000000      0x9e4 ./MCAL/TIMERS/Timer.o
- .stab          0x000009e4      0x4a4 ./MCAL/DIO/Dio.o
+ .stab          0x00000000      0x78c ./MCAL/TIMERS/Timer.o
+ .stab          0x0000078c      0x4a4 ./MCAL/DIO/Dio.o
                                 0x63c (size before relaxing)
- .stab          0x00000e88      0x300 ./ECUAL/LED/LED.o
-                                0x498 (size before relaxing)
+ .stab          0x00000c30      0x558 ./ECUAL/LED/LED.o
+                                0x6f0 (size before relaxing)
  .stab          0x00001188      0x30c ./ECUAL/BUTTON/Button.o
                                 0x4a4 (size before relaxing)
  .stab          0x00001494      0x6b4 ./Application/App.o

@@ -9,6 +9,7 @@ Application/App.o Application/App.o: ../Application/App.c \
   ../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/Dio.h \
   ../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/TIMERS/Timer.h \
   ../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/dio.h \
+  ../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../BUTTON/Button.h \
   ../Application/../ECUAL/BUTTON/../../MCAL/DIO/dio.h \
   ../Application/../ECUAL/LED/LED.h
 
@@ -33,6 +34,8 @@ Application/App.o Application/App.o: ../Application/App.c \
 ../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/TIMERS/Timer.h:
 
 ../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../../MCAL/DIO/dio.h:
+
+../Application/../ECUAL/BUTTON/../../MCAL/TIMERS/../../ECUAL/LED/../BUTTON/Button.h:
 
 ../Application/../ECUAL/BUTTON/../../MCAL/DIO/dio.h:
 

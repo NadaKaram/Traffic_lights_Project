@@ -10,7 +10,12 @@
 #include "../../MCAL/DIO/Dio.h"
 #include"../../MCAL/TIMERS/Timer.h"
 #include"../../MCAL/DIO/dio.h"
+#include "../BUTTON/Button.h"
 #include <util/delay.h>
+#define Pin_0 0
+#define Pin_1 1
+#define Pin_2 2
+#define Port_A 'A'
 void LED_init(uint8_t PortNumber,uint8_t PinNumber);
 void LED_ON(uint8_t PortNumber,uint8_t PinNumber);
 void LED_OFF(uint8_t PortNumber,uint8_t PinNumber);
